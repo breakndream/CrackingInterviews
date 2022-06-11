@@ -138,3 +138,9 @@ class Solution:
         return value 
         
 -End-
+
+
+참고 
+1. pop() method https://stackoverflow.com/questions/627435/how-to-remove-an-element-from-a-list-by-index
+2. 코드패스 mentor 답안지 https://replit.com/@YuSu2/102Section3-Week2Session2#problem2.py
+3. dictionary 문법 https://note.nkmk.me/en/python-dict-get/#:~:text=Use%20dict.-,get()%20to%20get%20the%20default%20value%20for%20non%2Dexistent,the%20key%20does%20not%20exist.&text=Specify%20the%20key%20as%20the,the%20key%20does%20not%20exist.
