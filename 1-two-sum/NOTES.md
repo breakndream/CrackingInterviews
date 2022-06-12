@@ -111,18 +111,19 @@ index out of bound같은 기초 에러는 안나게 하기. 계속 돌려보지�
             j = len(nums) -1
 
 ---
-1)
-  if nums[i] + nums[j] != target:
-       j -= 1
-    return [i, j]
+   
+    1)      if nums[i] + nums[j] != target:
+                j -= 1
+            return [i, j]
 
-2)
-    if nums[i] + nums[j] == target:
-       return [i, j]
-    j -= 1
-
-1은 return 이 else 일 때가 아니라 flow 상 if 안에 들어갔다가 무조건 실행됨.
+    2)
+            if nums[i] + nums[j] == target:
+                return [i, j]
+            j -= 1     
+ 
+                             
+1은 return (line 117) 이 else 일 때가 아니라 flow 상 if 안에 들어갔다가 무조건 실행됨.
 그래서 이번 문제의 경우 2) 로 적어줘야함. 아니면 1) line 177을 return 으로 써주든가
 
-
+---
 근데 생각보다 two pointer 효율이 안좋아서 brute force 기법으로 하는게 나을 수도.. hashmap으로 어떻게 하는지도 보기!
