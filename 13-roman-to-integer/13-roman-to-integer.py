@@ -10,17 +10,21 @@ class Solution:
                     "M": 1000                    
                    }
         
-        
+        numbers= []
         length = len(s)
-        value = numerals[s[length-1]]
-        # string도 인덱스 됨..
+    
+        for char in s:
+            numbers.append(char)
+        
+        value = numerals[numbers[length-1]]
+        
         
         for i in range(length -2, -1, -1):
             
-            if numerals[s[i]] < numerals[s[i+1]]:
-                value -=  numerals[s[i]]
+            if numerals[numbers[i]] < numerals[numbers[i+1]]:
+                value -=  numerals[numbers[i]]
             else :
-                value += numerals[s[i]]
+                value += numerals[numbers[i]]
                 
         return value 
 
