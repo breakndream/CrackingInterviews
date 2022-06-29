@@ -15,7 +15,10 @@ class Solution:
         
         # 4 -> 5 -> 6 -> 7   5
         # 4- > 5 -> 7
-        dummyNode = ListNode(node.next.val)
+        node.val = node.next.val
         node.next = node.next.next
-        node.val = dummyNode.val  
+        
+        # dummyNode = ListNode(node.next.val)
+        # node.next = node.next.next
+        # node.val = dummyNode.val  
             
