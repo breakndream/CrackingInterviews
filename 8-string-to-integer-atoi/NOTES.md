@@ -50,3 +50,6 @@
         else :
             return res
             
+  ![image](https://user-images.githubusercontent.com/94573832/179261531-feaea772-9cf5-46c0-910f-24c71a198635.png)
+  11시13분부터 미친 지랄을 했다네요..
+            
